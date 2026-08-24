@@ -1,0 +1,108 @@
+{
+	"type": "tabs",
+	"i18n": true,
+	"items": {
+		"tab-main": {
+			"type": "panel",
+			"label": "Main settings",
+			"items": {
+				"readInterval": {
+					"newLine": true,
+					"type": "number",
+					"label": "readInterval",
+					"help": "readInterval_help",
+					"xs": 12,
+					"sm": 12,
+					"md": 4,
+					"lg": 4,
+					"xl": 4
+				},
+				"timezone": {
+					"type": "text",
+					"newLine": true,
+					"text": "Timezone",
+					"label": "timezone",
+					"help": "timezone used to create cron jobs",
+          "default": "Europe/Berlin",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				}
+			}
+		},
+
+		"tab-search": {
+			"type": "panel",
+			"label": "Search settings",
+			"items": {
+
+				"SerpApi_enabled": {
+					"type": "checkbox",
+					"newLine": true,
+					"label": "enabled",
+					"tooltip": "enable search via SerpAPI",
+					"default": false
+				},
+				"SerpApi_key": {
+					"type": "text",
+					"newLine": true,
+					"label": "SerpApi key",
+					"help": "your personal SerpAPI key",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				},
+				"SerpApi_SearchString": {
+					"type": "text",
+					"newLine": true,
+					"label": "SerpApi Search String",
+					"help": "describe what you search",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				}
+			}
+		},
+		"tab-AI": {
+			"type": "panel",
+			"label": "AI settings",
+			"items": {
+				"GeminiApi_enabled": {
+					"type": "checkbox",
+					"label": "enabled",
+					"title": "UseGemini",
+					"tooltip": "enable search via Gemini API",
+					"default": false
+				},
+				"GeminiApi_key": {
+					"type": "text",
+					"newLine": true,
+					"label": "GeminiApi key",
+					"help": "your personal GeminiAPI key",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				},
+				"GeminiApi_SearchString": {
+					"type": "text",
+					"newLine": true,
+					"label": "GeminiApi Search String",
+					"help": "describe what you search",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				}
+			}
+		}
+	}
+}

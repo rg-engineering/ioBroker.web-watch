@@ -1,0 +1,90 @@
+{
+	"common": {
+		"name": "web_watch",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "WebWatch",
+			"de": "WebWatch",
+			"ru": "Веб-смотреть",
+			"pt": "WebWatch",
+			"nl": "WebWatch",
+			"fr": "Surveillance Web",
+			"it": "WebWatch",
+			"es": "WebVer",
+			"pl": "Zegarek internetowy",
+			"uk": "WebWatch",
+			"zh-cn": "网络观察"
+		},
+		"desc": {
+			"en": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+			"de": "Durchsucht das Internet regelmäßig auf der Grundlage einer Suchaufgabe und bereitet die Ergebnisse auf",
+			"ru": "durchsucht das Internet regelmässig basierend auf eineruchaufgabe und bereitet die Ergebnisse auf",
+			"pt": "durchsucht das Internet regelmässig baseierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+			"nl": "door het internet regelmatig te gebruiken, wordt een dergelijk bezoek en het gebruik van internet op internet gebaseerd",
+			"fr": "durchsucht the Internet regelmässig basierend auf einer Suchaufgabe et bereitet die Ergebnisse auf",
+			"it": "attraverso l'accesso regolare a Internet su una postazione di ricerca e la disponibilità su Internet",
+			"es": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+			"pl": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+			"uk": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+			"zh-cn": "互联网管理的基础是互联网的基础设施和服务"
+		},
+		"authors": [
+			"Rene <info@rg-engineering.eu>"
+		],
+		"keywords": [
+			"iobroker",
+			"search",
+			"internet"
+		],
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
+		"platform": "Javascript/Node.js",
+		"icon": "web_watch.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/rg-engineering/ioBroker.web_watch/master/admin/web_watch.png",
+		"readme": "https://github.com/rg-engineering/ioBroker.web_watch/blob/master/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"mode": "daemon",
+		"type": "utility",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=6.0.11"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=7.0.23"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
