@@ -51,21 +51,22 @@
 					"label": "SerpApi key",
 					"help": "your personal SerpAPI key",
 					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
+					"sm": 6,
+					"md": 6,
+					"lg": 6,
+					"xl": 6
 				},
 				"SerpApi_SearchString": {
 					"type": "text",
 					"newLine": true,
+          "multiline": true,
 					"label": "SerpApi Search String",
 					"help": "describe what you search",
 					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
 				}
 			}
 		},
@@ -86,21 +87,22 @@
 					"label": "GeminiApi key",
 					"help": "your personal GeminiAPI key",
 					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
+					"sm": 6,
+					"md": 6,
+					"lg": 6,
+					"xl": 6
 				},
 				"GeminiApi_SearchString": {
 					"type": "text",
 					"newLine": true,
+          "multiline": true,
 					"label": "GeminiApi Search String",
 					"help": "describe what you search",
 					"xs": 12,
-					"sm": 2,
-					"md": 2,
-					"lg": 2,
-					"xl": 2
+					"sm": 12,
+					"md": 12,
+					"lg": 12,
+					"xl": 12
 				}
 			}
 		}
