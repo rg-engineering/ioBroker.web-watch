@@ -11,6 +11,9 @@
 					"type": "number",
 					"label": "readInterval",
 					"help": "readInterval_help",
+					"min": 10,
+					"max": 1440,
+          "default": 240,
 					"xs": 12,
 					"sm": 12,
 					"md": 4,
@@ -20,9 +23,9 @@
 				"timezone": {
 					"type": "text",
 					"newLine": true,
-					"text": "Timezone",
+					"text": "timezone",
 					"label": "timezone",
-					"help": "timezone used to create cron jobs",
+					"help": "timezone_help",
           "default": "Europe/Berlin",
 					"xs": 12,
 					"sm": 2,
@@ -38,6 +41,50 @@
 			"label": "Search settings",
 			"items": {
 
+				"serpApiHdr": {
+					"type": "staticText",
+					"newLine": true,
+					"text": "Google Search API",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				},
+
+				"serpApiHint": {
+					"type": "staticText",
+					"newLine": true,
+					"text": "Google Search API is used to search the web. You need a personal API key.",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				},
+
+				"serpApiLink": {
+					"type": "staticLink",
+					"text": "link to Google Search API",
+					"href": "https://serpapi.com/dashboard",
+					"button": true,
+					"icon": "info",
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+
+
+				"dividerHdr1": {
+					"newLine": true,
+					"type": "header",
+					"text": "configuration",
+					"size": 2
+				},
+
 				"SerpApi_enabled": {
 					"type": "checkbox",
 					"newLine": true,
@@ -49,7 +96,7 @@
 					"type": "text",
 					"newLine": true,
 					"label": "SerpApi key",
-					"help": "your personal SerpAPI key",
+					"help": "SerpApi_key_help",
 					"xs": 12,
 					"sm": 6,
 					"md": 6,
@@ -59,7 +106,7 @@
 				"SerpApi_SearchString": {
 					"type": "text",
 					"newLine": true,
-          "multiline": true,
+					"multiline": true,
 					"label": "SerpApi Search String",
 					"help": "describe what you search",
 					"xs": 12,
@@ -74,6 +121,52 @@
 			"type": "panel",
 			"label": "AI settings",
 			"items": {
+
+				"geminiApiHdr": {
+					"type": "staticText",
+					"newLine": true,
+					"text": "Google Gemini API",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				},
+
+				"geminiApiHint": {
+					"type": "staticText",
+					"newLine": true,
+					"text": "Google Gemini API is used to further process search results. You need a personal API key.",
+					"xs": 12,
+					"sm": 2,
+					"md": 2,
+					"lg": 2,
+					"xl": 2
+				},
+
+				"geminiApiLink": {
+					"type": "staticLink",
+					"text": "link to Google Gemini API",
+					"href": "https://ai.google.dev/api/interactions-api?hl=de",
+					"button": true,
+					"icon": "info",
+					"newLine": true,
+					"xs": 12,
+					"sm": 12,
+					"md": 6,
+					"lg": 4,
+					"xl": 4
+				},
+
+
+				"dividerHdr2": {
+					"newLine": true,
+					"type": "header",
+					"text": "configuration",
+					"size": 2
+				},
+
+
 				"GeminiApi_enabled": {
 					"type": "checkbox",
 					"label": "enabled",
@@ -95,9 +188,9 @@
 				"GeminiApi_SearchString": {
 					"type": "text",
 					"newLine": true,
-          "multiline": true,
+					"multiline": true,
 					"label": "GeminiApi Search String",
-					"help": "describe what you search",
+					"help": "describe what you search. Search Results will be added automatically if present",
 					"xs": 12,
 					"sm": 12,
 					"md": 12,

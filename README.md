@@ -10,17 +10,53 @@
 
 **Tests:** ![Test and Release](https://github.com/rg-engineering/ioBroker.web_watch/workflows/Test%20and%20Release/badge.svg)
 
+**If you like it, please consider a donation:**
+                                                                          
+[![paypal](https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=34ESBMJ932QZC) 
+
+
+
 ## web_watch adapter for ioBroker
 
-durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf
+web_watch regularly searches the web for information based on a search query defined by the user and optionally uses Google Gemini AI to analyze and process the search results.
 
-### general idea
+## How it works
+### Web Search
+web_watch uses the Google Search API to search the web for the configured query.
 
-### usage
+### AI Processing
+The search results are then passed to the Google Gemini API for further processing. You can configure the Gemini prompt yourself to define what the AI should extract, analyze or summarize.
+
+If available, the web search results are automatically added to the AI prompt.
+
+Both functions can be enabled or disabled independently. This allows you to use web search only, AI processing only, or combine both.
+
+### API Keys
+
+You need your own API key for both services:
+
+(Google Search API)[https://serpapi.com/dashboard] – required for web searches
+(Google Gemini API)[https://ai.google.dev/api/interactions-api?hl=de] – required for AI processing
+
+You must create and configure these API keys yourself through the respective Google services. The API keys are not included with web_watch.
+
+### Free Tier Limitations
+
+Please be aware that both Google services are subject to usage limits and quotas, especially when using their free tiers. Limits may include the number of requests per day, rate limits, or restrictions on available models and services.
+
+The exact limits and pricing can change over time. Please check the current Google documentation and your API account for the applicable limits and costs.
+
+Using web_watch with frequent searches or AI processing may therefore result in reaching the free-tier limits or generating additional API costs.
 
 
+## known issues
+* please create issues at [github](https://github.com/rg-engineering/ioBroker.web_watch/issues) if you find bugs or whish new features.
 
 ## Changelog
+<!--
+  Placeholder for the next version (at the beginning of the line):
+  ### **WORK IN PROGRESS**
+-->
 
 ### 0.0.1
 * (Rene) initial release

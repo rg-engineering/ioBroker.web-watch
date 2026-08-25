@@ -1,5 +1,29 @@
 {
-	"web_watch adapter settings": "Adapter settings for web_watch",
-	"option1": "option1",
-	"option2": "option2"
+  "web_watch adapter settings": "Adapter settings for web_watch",
+
+  "Main settings": "Main settings",
+  "readInterval": "Read interval",
+  "readInterval_help": "Interval in minutes to read the web pages. Minimum is 10 minutes.",
+  "timezone": "Timezone",
+  "timezone_help": "Timezone used to create cron jobs",
+  "Search settings": "Search settings",
+  "AI settings": "AI settings",
+  "Google Search API is used to search the web. You need a personal API key.": "Google Search API is used to search the web. You need a personal API key.",
+  "link to Google Search API": "link to Google Search API",
+  "configuration": "configuration",
+  "enabled": "enabled",
+  "enable search via SerpAPI": "enable search via Google Search API",
+  "SerpApi key": "Google Search API key",
+  "SerpApi_key_help": "Your personal Google Search API key",
+  "SerpApi Search String": "Google Search API Search String",
+  "SerpApi_SearchString_help": "Describe what you want to search for",
+  "Google Gemini API is used to further process search results. You need a personal API key.": "Google Gemini API is used to further process search results. You need a personal API key.",
+  "link to Google Gemini API": "link to Google Gemini API",
+  "enable search via Gemini API": "enable search via Google Gemini API",
+  "GeminiApi key": "Google Gemini API key",
+  "your personal GeminiAPI key": "Your personal Google Gemini API key",
+  "GeminiApi Search String": "Google Gemini API Search String",
+  "describe what you search. Search Results will be added automatically if present": "Describe what you want to search for. Search results will be added automatically if present"
+
+
 }

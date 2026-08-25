@@ -47,6 +47,7 @@
     <Content Include="admin\i18n\zh-cn.json" />
     <Content Include="admin\jsonConfig.json5" />
     <Content Include="admin\web_watch.png" />
+    <Content Include="CHANGELOG_OLD.md" />
     <Content Include="eslint.config.mjs" />
     <Content Include="io-package.json" />
     <Content Include="LICENSE" />
