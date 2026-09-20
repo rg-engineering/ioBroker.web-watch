@@ -19,6 +19,8 @@
   "link to Google Search API": "Link zur Google Search API",
   "option1": "Option1",
   "option2": "Option2",
+  "readCronString": "Cron-String zum Definieren des Leseintervalls",
+  "readCronString_help": "es definiert das Leseintervall. Denken Sie daran, die Häufigkeit der Anfragen zu reduzieren, um eine Blockierung durch die Einschränkungen der Suchmaschine zu vermeiden.",
   "readInterval": "Leseintervall",
   "readInterval_help": "Intervall in Minuten zum Lesen der Webseiten. Das Minimum beträgt 10 Minuten.",
   "timezone": "Zeitzone",

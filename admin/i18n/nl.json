@@ -19,6 +19,8 @@
   "link to Google Search API": "link naar de Google Zoeken-API",
   "option1": "optie1",
   "option2": "optie2",
+  "readCronString": "Cron-tekenreeks om het leesinterval te definiëren",
+  "readCronString_help": "het definieert het leesinterval. Houd er rekening mee dat u de frequentie van verzoeken moet verminderen om te voorkomen dat u wordt geblokkeerd door de beperkingen van de zoekmachine.",
   "readInterval": "Lees interval",
   "readInterval_help": "Interval in minuten om de webpagina's te lezen. Minimaal is 10 minuten.",
   "timezone": "Tijdzone",

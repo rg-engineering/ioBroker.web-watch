@@ -19,6 +19,8 @@
   "link to Google Search API": "链接到 Google 搜索 API",
   "option1": "选项1",
   "option2": "选项2",
+  "readCronString": "用于定义读取间隔的 Cron 字符串",
+  "readCronString_help": "它定义了读取间隔。请记住减少请求的频率，以避免被搜索引擎限制阻止。",
   "readInterval": "读取间隔",
   "readInterval_help": "阅读网页的时间间隔以分钟为单位。最短时间为 10 分钟。",
   "timezone": "时区",
