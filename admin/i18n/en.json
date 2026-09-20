@@ -2,8 +2,7 @@
   "web_watch adapter settings": "Adapter settings for web_watch",
 
   "Main settings": "Main settings",
-  "readInterval": "Read interval",
-  "readInterval_help": "Interval in minutes to read the web pages. Minimum is 10 minutes.",
+
   "timezone": "Timezone",
   "timezone_help": "Timezone used to create cron jobs",
   "Search settings": "Search settings",
@@ -23,7 +22,8 @@
   "GeminiApi key": "Google Gemini API key",
   "your personal GeminiAPI key": "Your personal Google Gemini API key",
   "GeminiApi Search String": "Google Gemini API Search String",
-  "describe what you search. Search Results will be added automatically if present": "Describe what you want to search for. Search results will be added automatically if present"
+  "describe what you search. Search Results will be added automatically if present": "Describe what you want to search for. Search results will be added automatically if present",
 
-
+  "readCronString": "Cron string to define read interval",
+  "readCronString_help": "it defines the read interval. Keep in mind to reduce the frequency of requests to avoid being blocked by the search engine limitations."
 }
