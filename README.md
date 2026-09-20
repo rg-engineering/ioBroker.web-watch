@@ -58,7 +58,7 @@ Using web_watch with frequent searches or AI processing may therefore result in 
   ### **WORK IN PROGRESS**
 -->
 
-### 0.0.1
+### **WORK IN PROGRESS**
 * (Rene) initial release
 
 
