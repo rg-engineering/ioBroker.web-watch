@@ -56,7 +56,7 @@ class WebWatch extends utils.Adapter {
     constructor(options = {}) {
         super({
             ...options,
-            name: "web_watch",
+            name: "web-watch",
         });
         this.on("ready", this.onReady.bind(this));
         this.on("stateChange", this.onStateChange.bind(this));

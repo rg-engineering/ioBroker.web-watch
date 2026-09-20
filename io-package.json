@@ -57,10 +57,10 @@
 			"license": "MIT"
 		},
 		"platform": "Javascript/Node.js",
-		"icon": "web_watch.png",
+		"icon": "web-watch.png",
 		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/rg-engineering/ioBroker.web_watch/master/admin/web_watch.png",
-		"readme": "https://github.com/rg-engineering/ioBroker.web_watch/blob/master/README.md",
+		"extIcon": "https://raw.githubusercontent.com/rg-engineering/ioBroker.web-watch/master/admin/web-watch.png",
+		"readme": "https://github.com/rg-engineering/ioBroker.web-watch/blob/master/README.md",
 		"loglevel": "info",
 		"tier": 3,
 		"mode": "daemon",

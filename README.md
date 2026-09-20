@@ -1,12 +1,12 @@
-![Logo](admin/web_watch.png)
-# ioBroker.web_watch
+![Logo](admin/web-watch.png)
+# ioBroker.web-watch
 
-[![NPM version](https://img.shields.io/npm/v/iobroker.web_watch.svg)](https://www.npmjs.com/package/iobroker.web_watch)
-[![Downloads](https://img.shields.io/npm/dm/iobroker.web_watch.svg)](https://www.npmjs.com/package/iobroker.web_watch)
-![Number of Installations](https://iobroker.live/badges/web_watch-installed.svg)
-![Current version in stable repository](https://iobroker.live/badges/web_watch-stable.svg)
+[![NPM version](https://img.shields.io/npm/v/iobroker.web-watch.svg)](https://www.npmjs.com/package/iobroker.web-watch)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.web-watch.svg)](https://www.npmjs.com/package/iobroker.web-watch)
+![Number of Installations](https://iobroker.live/badges/web-watch-installed.svg)
+![Current version in stable repository](https://iobroker.live/badges/web-watch-stable.svg)
 
-[![NPM](https://nodei.co/npm/iobroker.web_watch.png?downloads=true)](https://nodei.co/npm/iobroker.web_watch/)
+[![NPM](https://nodei.co/npm/iobroker.web-watch.png?downloads=true)](https://nodei.co/npm/iobroker.web-watch/)
 
 **Tests:** ![Test and Release](https://github.com/rg-engineering/ioBroker.web_watch/workflows/Test%20and%20Release/badge.svg)
 
@@ -16,13 +16,13 @@
 
 
 
-## web_watch adapter for ioBroker
+## web-watch adapter for ioBroker
 
-web_watch regularly searches the web for information based on a search query defined by the user and optionally uses Google Gemini AI to analyze and process the search results.
+web-watch regularly searches the web for information based on a search query defined by the user and optionally uses Google Gemini AI to analyze and process the search results.
 
 ## How it works
 ### Web Search
-web_watch uses the Google Search API to search the web for the configured query.
+web-watch uses the Google Search API to search the web for the configured query.
 
 ### AI Processing
 The search results are then passed to the Google Gemini API for further processing. You can configure the Gemini prompt yourself to define what the AI should extract, analyze or summarize.
