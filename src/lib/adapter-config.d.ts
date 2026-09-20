@@ -9,7 +9,7 @@ declare global {
         
 		interface AdapterConfig {
 
-			readInterval: number;
+			readCronString: string;
 			timezone: string;
 
 			SerpApi_enabled: boolean;

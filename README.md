@@ -61,6 +61,9 @@ Using web_watch with frequent searches or AI processing may therefore result in 
 ### 0.0.1
 * (Rene) initial release
 
+
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 MIT License
 

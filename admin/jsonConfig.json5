@@ -2,31 +2,31 @@
 	"type": "tabs",
 	"i18n": true,
 	"items": {
+
+		//https://github.com/ioBroker/json-config#common-control-elements
 		"tab-main": {
 			"type": "panel",
 			"label": "Main settings",
 			"items": {
-				"readInterval": {
+				"readCronString": {
 					"newLine": true,
-					"type": "number",
-					"label": "readInterval",
-					"help": "readInterval_help",
-					"min": 10,
-					"max": 1440,
-          "default": 240,
+					"type": "cron",
+					"label": "readCronString",
+					"help": "readCronString_help",
 					"xs": 12,
 					"sm": 12,
 					"md": 4,
 					"lg": 4,
 					"xl": 4
 				},
+
 				"timezone": {
 					"type": "text",
 					"newLine": true,
 					"text": "timezone",
 					"label": "timezone",
 					"help": "timezone_help",
-          "default": "Europe/Berlin",
+					"default": "Europe/Berlin",
 					"xs": 12,
 					"sm": 2,
 					"md": 2,
@@ -34,13 +34,13 @@
 					"xl": 2
 				}
 			}
+
 		},
 
 		"tab-search": {
 			"type": "panel",
 			"label": "Search settings",
 			"items": {
-
 				"serpApiHdr": {
 					"type": "staticText",
 					"newLine": true,
@@ -90,10 +90,15 @@
 					"newLine": true,
 					"label": "enabled",
 					"tooltip": "enable search via SerpAPI",
-					"default": false
+					"default": false,
+					"xs": 12,
+					"sm": 6,
+					"md": 6,
+					"lg": 6,
+					"xl": 6
 				},
 				"SerpApi_key": {
-					"type": "text",
+					"type": "password",
 					"newLine": true,
 					"label": "SerpApi key",
 					"help": "SerpApi_key_help",
@@ -106,7 +111,7 @@
 				"SerpApi_SearchString": {
 					"type": "text",
 					"newLine": true,
-					"multiline": true,
+					"minRows": 5,
 					"label": "SerpApi Search String",
 					"help": "describe what you search",
 					"xs": 12,
@@ -170,12 +175,16 @@
 				"GeminiApi_enabled": {
 					"type": "checkbox",
 					"label": "enabled",
-					"title": "UseGemini",
 					"tooltip": "enable search via Gemini API",
-					"default": false
+					"default": false,
+					"xs": 12,
+					"sm": 6,
+					"md": 6,
+					"lg": 6,
+					"xl": 6
 				},
 				"GeminiApi_key": {
-					"type": "text",
+					"type": "password",
 					"newLine": true,
 					"label": "GeminiApi key",
 					"help": "your personal GeminiAPI key",
@@ -188,7 +197,7 @@
 				"GeminiApi_SearchString": {
 					"type": "text",
 					"newLine": true,
-					"multiline": true,
+					"minRows": 5,
 					"label": "GeminiApi Search String",
 					"help": "describe what you search. Search Results will be added automatically if present",
 					"xs": 12,

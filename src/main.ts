@@ -18,7 +18,7 @@ export class WebWatch extends utils.Adapter {
 	serpapi: serpapiIfc | null = null;
 	genai: genaiIfc | null = null;
 	cronJobs: CronJob<() => void, null>[] = [];
-    readInterval: number;
+    readCronString: string;
     timezone: string;
 
 	public constructor(options: Partial<utils.AdapterOptions> = {}) {
@@ -33,7 +33,7 @@ export class WebWatch extends utils.Adapter {
 		this.on("unload", this.onUnload.bind(this));
 
         this.cronJobs = [];
-        this.readInterval = 0;
+        this.readCronString = "0 0 18 * * *";
         this.timezone = "Europe/Berlin";
 	}
 
@@ -63,19 +63,19 @@ export class WebWatch extends utils.Adapter {
 
         this.genai = new genaiIfc(this, 1, genaiapi_config);
 
-        let readInterval = 0;
-        if (this.config.readInterval !== undefined) {
-            readInterval = this.config.readInterval;
+        let readCronString = "0 0 18 * * *";
+        if (this.config.readCronString !== undefined) {
+            readCronString = this.config.readCronString;
         }
-		if (readInterval > 0) {
-			this.readInterval = readInterval;
+		if (readCronString) {
+			this.readCronString = readCronString;
 		} else {
-			this.log.warn("read interval not defined");
+			this.log.warn("read cron string not defined");
         }
         this.timezone = this.config.timezone || "Europe/Berlin";
-		this.log.debug("read every  " + readInterval + " minutes " + this.timezone);
+        this.log.debug("read every  " + readCronString + "  " + this.timezone);
 
-		this.CronCreate(readInterval, this.Do.bind(this));
+		this.CronCreate(readCronString, this.Do.bind(this));
 
 		this.CronStatus();
 
@@ -203,26 +203,13 @@ export class WebWatch extends utils.Adapter {
     }
     */
 
-    CronCreate(Minute: number, callback: () => void): void {
+    CronCreate(cronString: string, callback: () => void): void {
         try {
             const timezone = this.timezone || "Europe/Berlin";
 
-            let cronString = "";
-            let sMinute = "";
-            //https://crontab-generator.org/
-            if (Minute == -99) {
-                //every day late evening
-                cronString = "5 23 * * *";
-                //just for logging
-                sMinute = "late evening";
-            } else {
-                cronString = "*/" + Minute + " * * * *";
-                sMinute = Minute.toString();
-            }
-
             const nextCron = this.cronJobs.length;
 
-            this.log.debug("create cron job #" + nextCron + " every " + sMinute + " string: " + cronString + " " + timezone);
+            this.log.debug("create cron job #" + nextCron + " with string: " + cronString + " " + timezone);
 
             //details siehe https://www.npmjs.com/package/cron
             const job = CronJob.from({
