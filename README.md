@@ -57,7 +57,7 @@ Using web_watch with frequent searches or AI processing may therefore result in 
   Placeholder for the next version (at the beginning of the line):
   ### **WORK IN PROGRESS**
 -->
-### 0.0.3 (2026-09-20)
+### **WORK IN PROGRESS**
 * (Rene) initial release
 
 
