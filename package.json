@@ -1,6 +1,6 @@
 {
   "name": "iobroker.web-watch",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
   "author": {
     "name": "Rene",

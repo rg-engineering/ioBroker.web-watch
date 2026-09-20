@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "web-watch",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "news": {
+      "0.0.5": {
+        "en": "initial release",
+        "de": "erste Version",
+        "ru": "первоначальный релиз",
+        "pt": "versão inicial",
+        "nl": "eerste uitgave",
+        "fr": "sortie initiale",
+        "it": "prima versione",
+        "es": "versión inicial",
+        "pl": "wstępne wydanie",
+        "uk": "первинний випуск",
+        "zh-cn": "初始版本"
+      },
       "0.0.4": {
         "en": "initial release",
         "de": "erste Version",
