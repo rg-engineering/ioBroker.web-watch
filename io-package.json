@@ -1,96 +1,108 @@
 {
-	"common": {
-		"name": "web-watch",
-		"version": "0.0.3",
-		"news": {
-			"0.0.3": {
-
-				"en": "initial release"
-			}
-		},
-		"titleLang": {
-			"en": "WebWatch",
-			"de": "WebWatch",
-			"ru": "Веб-смотреть",
-			"pt": "WebWatch",
-			"nl": "WebWatch",
-			"fr": "Surveillance Web",
-			"it": "WebWatch",
-			"es": "WebVer",
-			"pl": "Zegarek internetowy",
-			"uk": "WebWatch",
-			"zh-cn": "网络观察"
-		},
-		"desc": {
-			"en": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
-			"de": "Durchsucht das Internet regelmäßig auf der Grundlage einer Suchaufgabe und bereitet die Ergebnisse auf",
-			"ru": "durchsucht das Internet regelmässig basierend auf eineruchaufgabe und bereitet die Ergebnisse auf",
-			"pt": "durchsucht das Internet regelmässig baseierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
-			"nl": "door het internet regelmatig te gebruiken, wordt een dergelijk bezoek en het gebruik van internet op internet gebaseerd",
-			"fr": "durchsucht the Internet regelmässig basierend auf einer Suchaufgabe et bereitet die Ergebnisse auf",
-			"it": "attraverso l'accesso regolare a Internet su una postazione di ricerca e la disponibilità su Internet",
-			"es": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
-			"pl": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
-			"uk": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
-			"zh-cn": "互联网管理的基础是互联网的基础设施和服务"
-		},
-		"authors": [
-			"Rene <info@rg-engineering.eu>"
-		],
-		"keywords": [
-			"search",
-			"internet",
-			"google",
-			"AI"
-		],
-		"licenseInformation": {
-			"type": "free",
-			"license": "MIT"
-		},
-		"platform": "Javascript/Node.js",
-		"icon": "web-watch.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/rg-engineering/ioBroker.web-watch/master/admin/web-watch.png",
-		"readme": "https://github.com/rg-engineering/ioBroker.web-watch/blob/master/README.md",
-		"loglevel": "info",
-		"tier": 3,
-		"mode": "daemon",
-		"type": "utility",
-		"compact": true,
-		"connectionType": "cloud",
-		"dataSource": "poll",
-		"adminUI": {
-			"config": "json"
-		},
-		"dependencies": [
-			{
-				"js-controller": ">=6.0.11"
-			}
-		],
-		"globalDependencies": [
-			{
-				"admin": ">=7.6.20"
-			}
-		]
-	},
-	"native": {
-		"readCronString": "0 0 18 * * *",
-		"timezone": "Europe/Berlin",
-		"SerpApi_enabled": false,
-		"SerpApi_key": "",
-		"SerpApi_SearchString": "",
-		"GeminiApi_enabled": false,
-		"GeminiApi_key": "",
-		"GeminiApi_SearchString": ""
-	},
-	"objects": [],
-	"instanceObjects": [],
-	"protectedNative": [
-		"SerpApi_key",
-		"GeminiApi_key"
-	],
-	"encryptedNative": [
-		"SerpApi_key",
-		"GeminiApi_key"
-	]
+  "common": {
+    "name": "web-watch",
+    "version": "0.0.4",
+    "news": {
+      "0.0.4": {
+        "en": "initial release",
+        "de": "erste Version",
+        "ru": "первоначальный релиз",
+        "pt": "versão inicial",
+        "nl": "eerste uitgave",
+        "fr": "sortie initiale",
+        "it": "prima versione",
+        "es": "versión inicial",
+        "pl": "wstępne wydanie",
+        "uk": "первинний випуск",
+        "zh-cn": "初始版本"
+      },
+      "0.0.3": {
+        "en": "initial release"
+      }
+    },
+    "titleLang": {
+      "en": "WebWatch",
+      "de": "WebWatch",
+      "ru": "Веб-смотреть",
+      "pt": "WebWatch",
+      "nl": "WebWatch",
+      "fr": "Surveillance Web",
+      "it": "WebWatch",
+      "es": "WebVer",
+      "pl": "Zegarek internetowy",
+      "uk": "WebWatch",
+      "zh-cn": "网络观察"
+    },
+    "desc": {
+      "en": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+      "de": "Durchsucht das Internet regelmäßig auf der Grundlage einer Suchaufgabe und bereitet die Ergebnisse auf",
+      "ru": "durchsucht das Internet regelmässig basierend auf eineruchaufgabe und bereitet die Ergebnisse auf",
+      "pt": "durchsucht das Internet regelmässig baseierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+      "nl": "door het internet regelmatig te gebruiken, wordt een dergelijk bezoek en het gebruik van internet op internet gebaseerd",
+      "fr": "durchsucht the Internet regelmässig basierend auf einer Suchaufgabe et bereitet die Ergebnisse auf",
+      "it": "attraverso l'accesso regolare a Internet su una postazione di ricerca e la disponibilità su Internet",
+      "es": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+      "pl": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+      "uk": "durchsucht das Internet regelmässig basierend auf einer Suchaufgabe und bereitet die Ergebnisse auf",
+      "zh-cn": "互联网管理的基础是互联网的基础设施和服务"
+    },
+    "authors": [
+      "Rene <info@rg-engineering.eu>"
+    ],
+    "keywords": [
+      "search",
+      "internet",
+      "google",
+      "AI"
+    ],
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "web-watch.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/rg-engineering/ioBroker.web-watch/master/admin/web-watch.png",
+    "readme": "https://github.com/rg-engineering/ioBroker.web-watch/blob/master/README.md",
+    "loglevel": "info",
+    "tier": 3,
+    "mode": "daemon",
+    "type": "utility",
+    "compact": true,
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.20"
+      }
+    ]
+  },
+  "native": {
+    "readCronString": "0 0 18 * * *",
+    "timezone": "Europe/Berlin",
+    "SerpApi_enabled": false,
+    "SerpApi_key": "",
+    "SerpApi_SearchString": "",
+    "GeminiApi_enabled": false,
+    "GeminiApi_key": "",
+    "GeminiApi_SearchString": ""
+  },
+  "objects": [],
+  "instanceObjects": [],
+  "protectedNative": [
+    "SerpApi_key",
+    "GeminiApi_key"
+  ],
+  "encryptedNative": [
+    "SerpApi_key",
+    "GeminiApi_key"
+  ]
 }
