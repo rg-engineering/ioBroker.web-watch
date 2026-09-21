@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "web-watch",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "news": {
+      "0.0.6": {
+        "en": "just to test deployment",
+        "de": "Nur um den Einsatz zu testen",
+        "ru": "просто для тестирования развертывания",
+        "pt": "só para testar o uso",
+        "nl": "gewoon om de implementatie te testen",
+        "fr": "juste pour tester le déploiement",
+        "it": "solo per testare l'uso",
+        "es": "solo para probar el uso",
+        "pl": "tylko do przetestowania wdrożenia",
+        "uk": "просто для тестування розгортання",
+        "zh-cn": "只是为了测试部署"
+      },
       "0.0.5": {
         "en": "initial release",
         "de": "erste Version",
