@@ -28,22 +28,6 @@
         "pl": "wstępne wydanie",
         "uk": "первинний випуск",
         "zh-cn": "初始版本"
-      },
-      "0.0.4": {
-        "en": "initial release",
-        "de": "erste Version",
-        "ru": "первоначальный релиз",
-        "pt": "versão inicial",
-        "nl": "eerste uitgave",
-        "fr": "sortie initiale",
-        "it": "prima versione",
-        "es": "versión inicial",
-        "pl": "wstępne wydanie",
-        "uk": "первинний випуск",
-        "zh-cn": "初始版本"
-      },
-      "0.0.3": {
-        "en": "initial release"
       }
     },
     "titleLang": {

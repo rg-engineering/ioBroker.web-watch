@@ -25,5 +25,7 @@
   "describe what you search. Search Results will be added automatically if present": "Describe what you want to search for. Search results will be added automatically if present",
 
   "readCronString": "Cron string to define read interval",
-  "readCronString_help": "it defines the read interval. Keep in mind to reduce the frequency of requests to avoid being blocked by the search engine limitations."
+  "readCronString_help": "it defines the read interval. Keep in mind to reduce the frequency of requests to avoid being blocked by the search engine limitations.",
+
+  "describe what you search": "Describe what you want to search for."
 }
