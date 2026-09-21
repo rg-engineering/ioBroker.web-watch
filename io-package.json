@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "web-watch",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "news": {
+      "0.0.7": {
+        "en": "translations\n",
+        "de": "Übersetzungen\n",
+        "ru": "переводов\n",
+        "pt": "traduções\n",
+        "nl": "vertalingen\n",
+        "fr": "traductions\n",
+        "it": "traduzioni\n",
+        "es": "traducciones\n",
+        "pl": "tłumaczenia\n",
+        "uk": "переклади\n",
+        "zh-cn": "译文\n"
+      },
       "0.0.6": {
         "en": "just to test deployment",
         "de": "Nur um den Einsatz zu testen",
