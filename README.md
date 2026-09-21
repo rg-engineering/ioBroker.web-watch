@@ -15,7 +15,6 @@
 [![paypal](https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=34ESBMJ932QZC) 
 
 
-
 ## web-watch adapter for ioBroker
 
 web-watch regularly searches the web for information based on a search query defined by the user and optionally uses Google Gemini AI to analyze and process the search results.
@@ -57,13 +56,11 @@ Using web_watch with frequent searches or AI processing may therefore result in 
   Placeholder for the next version (at the beginning of the line):
   ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (Rene) just to test deployment
+
 ### 0.0.5 (2026-09-20)
 * (Rene) initial release
-
-
-
-
-
 
 [Older changelogs can be found there](CHANGELOG_OLD.md)
 
