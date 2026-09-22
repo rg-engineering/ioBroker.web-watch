@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "web-watch",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "news": {
+      "0.0.8": {
+        "en": "sentry added",
+        "de": "Sentry fügt",
+        "ru": "добавлена турель",
+        "pt": "sentinela",
+        "nl": "schildwacht toegevoegd",
+        "fr": "sentinelle",
+        "it": "sentinella",
+        "es": "centinela añadió",
+        "pl": "wartownik dodał",
+        "uk": "додано сторожовий",
+        "zh-cn": "哨兵已添加"
+      },
       "0.0.7": {
         "en": "translations\n",
         "de": "Übersetzungen\n",
