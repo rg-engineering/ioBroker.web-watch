@@ -106,7 +106,12 @@
       {
         "admin": ">=7.6.20"
       }
-    ]
+    ],
+    "plugins": {
+      "sentry": {
+        "dsn": "https://cf44e239a1919d39ac1a6cb67c6f363c@o390433.ingest.us.sentry.io/4512130979790848"
+      }
+    }
   },
   "native": {
     "readCronString": "0 0 18 * * *",
